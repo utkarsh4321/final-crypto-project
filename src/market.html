@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crypto | Exchange</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+  <!-- NAVBAR  -->
+  <section id="showcase">
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Products <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+
+            <li class="nav-item chart">
+              <a class="nav-link" href="#">Charts</a>
+            </li>
+            <div class="clearer">
+              <li class="nav-item signin" id="ram">
+                <a class="nav-link link1" href="./index.html">Sign In</a>
+              </li>
+              <li class="nav-item signup">
+                <a class="nav-link link2" href="./signup.html">Sign Up</a>
+              </li>
+            </div>
+
+            <li class="nav-item smaller1">
+              <a class="nav-link" href="./index.html">Sign In</a>
+            </li>
+            <li class="nav-item smaller2">
+              <a class="nav-link" href="./signup.html">Sign Up</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+    <!-- CHART PAGES STARTED -->
+
+    <!-- SHOWCASE FOR THE CHARD_SECTION -->
+
+    <!-- MAIN CHART AREA STARTED -->
+    <div class="main-chart text-secondary">
+
+      <div class="row mt-3">
+        <div class="col-md-3 market">
+          <!-- NAV CARD STARTED -->
+          <div class="card">
+
+            <nav>
+
+              <div class="nav nav-tabs d-flex" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active flex-fill" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                  aria-controls="nav-home" aria-selected="true">USDT</a>
+                <a class="nav-item nav-link flex-fill" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                  aria-controls="nav-profile" aria-selected="false">INR</a>
+                <a class="nav-item nav-link flex-fill" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                  aria-controls="nav-contact" aria-selected="false">BTC</a>
+              </div>
+
+            </nav>
+
+            <div class="card-body" style="height:19rem; overflow-y: auto;">
+              <form>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" style="background:transparent;"><i class="fas fa-search"></i></span>
+
+                  </div>
+                  <input type="text" class="form-control m-0" aria-label="Dollar amount (with dot and two decimal places)"
+                    placeholder="search">
+
+                </div>
+              </form>
+              <div class="tab-content" id="nav-tabContent">
+
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div class="d-flex justify-content-between">
+                    <div><small>Pair</small></div>
+                    <div><small>Vol <i class="fas fa-arrow-down"></i></small></div>
+                    <div><small>Change</small></div>
+                  </div>
+                  <ul class="mt-2" id="selection">
+                    <li class="d-flex justify-content-between elemt">
+                      <div class="pair d-flex">
+                        <i class="fab fa-bitcoin text-primary align-self-center bitone"></i>
+                        <div class="font-weight-bold">BTH</div>
+                      </div>
+                      <div class="change">
+                        <div class="font-weight-bold">$30,000</div>
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between elemt">
+                      <div class="pair d-flex">
+
+                        <i class="fab fa-affiliatetheme text-success align-self-center"></i>
+                        <div class="font-weight-bold">XLH</div>
+                      </div>
+                      <div class="change">
+                        <div class="font-weight-bold">$40,000</div>
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between elemt">
+                      <div class="pair d-flex">
+
+                        <i class="fab fa-asymmetrik align-self-center text-danger"></i>
+                        <div class="font-weight-bold ">ETH</div>
+                      </div>
+                      <div class="change">
+                        <div class="font-weight-bold">$55,000</div>
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between elemt">
+                      <div class="pair d-flex">
+
+                        <i class="fab fa-btc text-warning align-self-center"></i>
+                        <div class="font-weight-bold">IRC</div>
+                      </div>
+                      <div class="change">
+                        <div class="font-weight-bold">$90,000</div>
+                      </div>
+                    </li>
+
+
+
+
+
+
+
+
+
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <div class="d-flex justify-content-between">
+                    <div><small>Pair</small></div>
+                    <div><small>Vol <i class="fas fa-arrow-down"></i></small></div>
+                    <div><small>Change</small></div>
+                  </div>
+                  <ul>
+                    <li class="d-flex justify-content-between elemt">
+                      <div class="pair d-flex">
+                        <i class="fab fa-bitcoin text-primary align-self-center bitone"></i>
+                        <div class="font-weight-bold">BTH</div>
+                      </div>
+                      <div class="change">
+                        <div class="font-weight-bold">$30,000</div>
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between elemt">
+                      <div class="pair d-flex">
+
+                        <i class="fab fa-affiliatetheme text-success align-self-center"></i>
+                        <div class="font-weight-bold">XLH</div>
+                      </div>
+                      <div class="change">
+                        <div class="font-weight-bold">$40,000</div>
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between elemt">
+                      <div class="pair d-flex">
+
+                        <i class="fab fa-asymmetrik align-self-center text-danger"></i>
+                        <div class="font-weight-bold ">ETH</div>
+                      </div>
+                      <div class="change">
+                        <div class="font-weight-bold">$55,000</div>
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between elemt">
+                      <div class="pair d-flex">
+
+                        <i class="fab fa-btc text-warning align-self-center"></i>
+                        <div class="font-weight-bold">IRC</div>
+                      </div>
+                      <div class="change">
+                        <div class="font-weight-bold">$90,000</div>
+                      </div>
+                    </li>
+
+
+
+
+
+
+
+
+
+                  </ul>
+
+
+
+
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+              </div>
+            </div>
+          </div>
+          <!-- NAV CARD ENDED -->
+        </div>
+        <div class="col-md-6 market">
+          <!-- BAR CHART CARD STARTED -->
+          <div class="card">
+            <div class="card-header">
+              CHART
+            </div>
+            <div class="card-body">
+              <div id="charts"></div>
+            </div>
+          </div>
+
+
+
+          <!-- BAR CHART CARD ENDED -->
+        </div>
+        <div class="col-md-3 market">
+
+          <div class="card">
+            <div class="card-header">
+              TRADE HISTORY
+            </div>
+            <div class="card-body p-0" style="height:19rem; overflow-y: auto;">
+
+              <!-- TRADE HISTORY STARTED -->
+              <div class="d-flex justify-content-around">
+                <div><small>Price</small></div>
+                <div><small>Volume</small></div>
+                <div><small>Time</small></div>
+              </div>
+              <ul id="trade_me">
+                <li class="d-flex justify-content-around">
+                  <div class="pair d-flex">
+                    <i class="fas fa-arrow-down align-self-center"></i>
+                    <div>6570</div>
+                  </div>
+                  <div class="volume">
+                    <div class="text-dark font-weight-bold">0.1250</div>
+                  </div>
+                  <div class="change">
+                    <div>17:21:39</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-around">
+                  <div class="pair d-flex">
+
+                    <i class="fas fa-arrow-down align-self-center"></i>
+                    <div>6575</div>
+                  </div>
+                  <div class="text-dark font-weight-bold">0.0574</div>
+                  <div class="change">
+                    <div>17:25:47</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-around">
+                  <div class="pair d-flex">
+                    <i class="fas fa-arrow-up align-self-center"></i>
+
+                    <div>6580</div>
+                  </div>
+                  <div class="text-dark font-weight-bold">0.0263</div>
+                  <div class="change">
+                    <div>17:21:11</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-around">
+                  <div class="pair d-flex">
+                    <i class="fas fa-arrow-up align-self-center"></i>
+
+                    <div>6563</div>
+                  </div>
+                  <div class="text-dark font-weight-bold">0.0054</div>
+
+                  <div class="change">
+                    <div>17:11:13</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-around">
+                  <div class="pair d-flex">
+                    <i class="fas fa-arrow-up align-self-center"></i>
+
+                    <div>6563</div>
+                  </div>
+                  <div class="text-dark font-weight-bold">0.0054</div>
+
+                  <div class="change">
+                    <div>17:11:13</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-around">
+                  <div class="pair d-flex">
+                    <i class="fas fa-arrow-up align-self-center"></i>
+
+                    <div>6563</div>
+                  </div>
+                  <div class="text-dark font-weight-bold">0.0054</div>
+
+                  <div class="change">
+                    <div>17:11:13</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-around">
+                  <div class="pair d-flex">
+                    <i class="fas fa-arrow-up align-self-center"></i>
+
+                    <div>6563</div>
+                  </div>
+                  <div class="text-dark font-weight-bold">0.0054</div>
+
+                  <div class="change">
+                    <div>17:11:13</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-around">
+                  <div class="pair d-flex">
+                    <i class="fas fa-arrow-down align-self-center"></i>
+
+                    <div>6563</div>
+                  </div>
+                  <div class="text-dark font-weight-bold">0.0054</div>
+
+                  <div class="change">
+                    <div>17:11:13</div>
+                  </div>
+                </li>
+
+
+
+
+
+
+
+
+
+              </ul>
+
+
+
+
+
+              <!-- TRADE HISTORY ENDED -->
+
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+      <!-- FIRST ROM ENDED -->
+      <div class="row">
+        <div class="col-md-4 market">
+          <!-- BUY ORDER STARTED -->
+          <div class="card">
+            <div class="card-header">BUY ORDERS</div>
+            <div class="card-body" style="height:19rem; overflow-y: auto;">
+              <!-- TRADE HISTORY STARTED -->
+              <div class="d-flex justify-content-between">
+                <div><small>Total</small></div>
+                <div><small>Amount(BTC)</small></div>
+                <div><small>Buy Price</small></div>
+              </div>
+              <ul class="mt-2" id="trading">
+                <li class="d-flex justify-content-between">
+                  <div class="pair d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>5,760.10</div>
+                  </div>
+                  <div>0.0156</div>
+                  <div class="change d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>30,000</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="pair d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>7,680.10</div>
+                  </div>
+                  <div>0.0179</div>
+                  <div class="change d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>40,000</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="pair d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>7,680.10</div>
+                  </div>
+                  <div>0.0179</div>
+                  <div class="change d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>40,000</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="pair d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>7,680.10</div>
+                  </div>
+                  <div>0.0179</div>
+                  <div class="change d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>40,000</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="pair d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>7,680.10</div>
+                  </div>
+                  <div>0.0179</div>
+                  <div class="change d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>40,000</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="pair d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>7,680.10</div>
+                  </div>
+                  <div>0.0179</div>
+                  <div class="change d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>40,000</div>
+                  </div>
+                </li>
+              </ul>
+              <!-- TRADE HISTORY ENDED -->
+            </div>
+          </div>
+
+
+
+
+
+          <!-- BUY ORDER TABLE FINISHED -->
+        </div>
+        <div class="col-md-4 market">
+          <!-- BUY SELL TABLE STARTED -->
+          <div class="card">
+
+            <nav>
+
+              <div class="nav nav-tabs d-flex text-center" id="nav-tabs" role="tablist">
+                <a class="nav-item nav-link active flex-fill titu" id="nav-my-tab" data-toggle="tab" href="#nav-my"
+                  role="tab" aria-controls="nav-my" aria-selected="true">BUY</a>
+                <a class="nav-item nav-link flex-fill" id="nav-nanga-tab" data-toggle="tab" href="#nav-nanga" role="tab"
+                  aria-controls="nav-nanga" aria-selected="false">SELL</a>
+
+              </div>
+
+            </nav>
+
+            <div class="card-body">
+
+              <div class="tab-content" id="nav-tabsContent">
+
+                <div class="tab-pane fade show active" id="nav-my" role="tabpanel" aria-labelledby="nav-my-tab">
+                  <form>
+                    <div style="font-size:.7rem;" class="font-weight-bold ml-2"><i class="fas fa-rupee-sign"></i> 0.0</div>
+                    <div class="buy-me d-flex" style="font-size:.6rem;">
+                      <div class="avg">
+                        <div class="align-self-center">PRICE</div>
+                        <div class="align-self-center">USDT</div>
+                      </div>
+                      <input type="text" style="border:none;width:100%;margin-left:1rem;" placeholder="0.0">
+                      <div class="lowest d-flex">
+                        <div class="text-success align-self-center font-weight-bold">LOWEST</div>
+                        <div class="pl-1 align-self-center text-success font-weight-bold">PRICE</div>
+                      </div>
+
+
+
+                    </div>
+
+                    <div class="buy-me d-flex" style="font-size:.6rem;">
+                      <div class="avg">
+                        <div class="align-self-center">AMOUNT</div>
+                        <div class="align-self-center">BTC</div>
+                      </div>
+                      <input type="text" style="border:none;width:100%;margin-left:1rem;" placeholder="0.0">
+
+
+
+
+                    </div>
+
+                    <div style="font-size:.7rem;" class="font-weight-bold ml-2"><i class="fas fa-rupee-sign"></i> 0.00</div>
+                    <div class="buy-me d-flex" style="font-size:.6rem;">
+                      <div class="avg">
+                        <div class="align-self-center">TOTAL</div>
+                        <div class="align-self-center">USDT</div>
+                      </div>
+                      <input type="text" style="border:none;width:100%;margin-left:1rem;" placeholder="0.0">
+                      <div class="lowest d-flex">
+                        <div class="text-success align-self-center font-weight-bold">SPEND</div>
+                        <div class="pl-1 align-self-center text-success font-weight-bold">ALL</div>
+                      </div>
+
+
+
+                    </div>
+
+
+                    <input type="submit" value="PLACE BUY ORDER" class="btn btn-success btn-block font-weight-bold"
+                      style="font-size:1rem;">
+
+
+
+                  </form>
+                  <small class="text-secondary mt-1">Fee:Maker fee:0.10% | Taker fee:0.25%</small>
+                </div>
+                <div class="tab-pane fade" id="nav-nanga" role="tabpanel" aria-labelledby="nav-nanga-tab">
+                  <form>
+                    <div style="font-size:.7rem;" class="font-weight-bold ml-2"><i class="fas fa-rupee-sign"></i> 0.0</div>
+                    <div class="buy-me d-flex" style="font-size:.6rem;">
+                      <div class="avg">
+                        <div class="align-self-center">PRICE</div>
+                        <div class="align-self-center">USDT</div>
+                      </div>
+                      <input type="text" style="border:none;width:100%;margin-left:1rem;" placeholder="0.0">
+                      <div class="lowest d-flex">
+                        <div class="text-danger align-self-center font-weight-bold">LOWEST</div>
+                        <div class="pl-1 align-self-center text-danger font-weight-bold">PRICE</div>
+                      </div>
+
+
+
+                    </div>
+
+                    <div class="buy-me d-flex" style="font-size:.6rem;">
+                      <div class="avg">
+                        <div class="align-self-center">AMOUNT</div>
+                        <div class="align-self-center">BTC</div>
+                      </div>
+                      <input type="text" style="border:none;width:100%;margin-left:1rem;" placeholder="0.0">
+
+
+
+
+                    </div>
+
+                    <div style="font-size:.7rem;" class="font-weight-bold ml-2"><i class="fas fa-rupee-sign"></i> 0.00</div>
+                    <div class="buy-me d-flex" style="font-size:.6rem;">
+                      <div class="avg">
+                        <div class="align-self-center">TOTAL</div>
+                        <div class="align-self-center">USDT</div>
+                      </div>
+                      <input type="text" style="border:none;width:100%;margin-left:1rem;" placeholder="0.0">
+                      <div class="lowest d-flex">
+                        <div class="text-danger align-self-center font-weight-bold">SPEND</div>
+                        <div class="pl-1 align-self-center text-danger font-weight-bold">ALL</div>
+                      </div>
+
+
+
+                    </div>
+
+
+                    <input type="submit" value="PLACE BUY ORDER" class="btn btn-danger btn-block font-weight-bold"
+                      style="font-size:1rem;">
+
+
+
+                  </form>
+                  <small class="text-secondary mt-1">Fee:Maker fee:0.10% | Taker fee:0.25%</small>
+
+
+
+
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- BUY SELL TABLE ENDED -->
+        </div>
+        <div class="col-md-4 market">
+          <!-- SELL ORDER TABLE STARTED -->
+
+          <div class="card">
+            <div class="card-header">SELL ORDERS</div>
+            <div class="card-body" style="height:19rem; overflow-y: auto;">
+
+              <div class="d-flex justify-content-between">
+                <div><small>Sell Price</small></div>
+                <div><small>Amount(BTC)</small></div>
+                <div><small>Total</small></div>
+              </div>
+              <ul class="mt-2" id="trading">
+                <li class="d-flex justify-content-between">
+                  <div class="pair d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>5,760.10</div>
+                  </div>
+                  <div>0.0156</div>
+                  <div class="change d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>30,000</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="pair d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>7,680.10</div>
+                  </div>
+                  <div>0.0179</div>
+                  <div class="change d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>40,000</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="pair d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>7,680.10</div>
+                  </div>
+                  <div>0.0179</div>
+                  <div class="change d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>40,000</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="pair d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>7,680.10</div>
+                  </div>
+                  <div>0.0179</div>
+                  <div class="change d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>40,000</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="pair d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>7,680.10</div>
+                  </div>
+                  <div>0.0179</div>
+                  <div class="change d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>40,000</div>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <div class="pair d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>7,680.10</div>
+                  </div>
+                  <div>0.0179</div>
+                  <div class="change d-flex">
+                    <i class="fas fa-rupee-sign align-self-center"></i>
+                    <div>40,000</div>
+                  </div>
+                </li>
+
+
+
+
+
+
+
+
+
+
+              </ul>
+
+
+
+
+
+
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <!-- SELL ORDER TABLE ENDED -->
+        </div>
+
+      </div>
+
+
+
+
+
+      <!-- CONTAINER endede -->
+      <!-- MY ORDER STARTED -->
+      <div class="row">
+        <div class="col-md-6 market">
+          <div class="card p-0 m-0">
+            <div class="card-body text-center">
+              <div class="my-order d-flex justify-content-between">
+                <div class="align-self-center">My Open Orders</div>
+                <div class="selector">
+                  <a href="#" class="btn btn-primary text-light">Open</a>
+                  <a href="#" class="btn btn-danger text-light">Close</a>
+                </div>
+              </div>
+              <p>Login to see your open orders</p>
+              <a href="#" class="btn btn-primary">Login Now</a>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- MY ORDER IS ENDED -->
+        <!-- SECTION FOR FUTURE APP SARTED -->
+        <div class="col-md-6 market">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5>Download Our App</h5>
+
+              <i class="fab fa-telegram text-primary" style="font-size:4rem;"></i>
+              <p>Stay up to date with the latest crypto news and connect with other Coindelta traders in our Telegram
+                group.</p>
+              <small>Now, Trade, Send and Receive from anywhere, on the go, Download our Android or iOS App.</small>
+              <div class="app-stores d-flex justify-content-between
+              text-light">
+                <button class="d-flex btn ml-2">
+                  <i class="fab fa-google-play align-self-center mx-2"></i>
+                  <div>
+                    <div>Get it on</div>
+                    <div class="font-weight-bold" style="font-size:1.5rem;">Google Play</div>
+                  </div>
+                </button>
+                <button class="d-flex btn ">
+                  <i class="fab fa-apple align-self-center mx-2"></i>
+                  <div>
+                    <div class="p-0 m-0">Get it now</div>
+                    <div class="font-weight-bold" style="font-size: 1.5rem;">for ios Store</div>
+                  </div>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+        <!-- FUTURE APP ENDED -->
+      </div>
+
+
+
+
+
+
+    </div>
+    <!-- MAIN CHART AREA ENDED -->
+  </section>
+
+  <!-- SHOWCASE AREA ENDED FOR CHART SECTION -->
+
+
+
+
+
+
+
+
+  <script src="./js/jquery.min.js"></script>
+
+  <script src="./js/bootstrap.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+  <script src="./js/apexcharts.min.js"></script>
+  <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>

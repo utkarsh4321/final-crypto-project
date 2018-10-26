@@ -1,0 +1,101 @@
+.main-chart {
+  padding: 1rem;
+  & .market {
+    padding: 0.3rem;
+  }
+  & #nav-tab {
+    background: rgba(243, 241, 241, 0.616);
+    text-align: center;
+    border: none;
+    & .harami {
+      color: green;
+    }
+    .active {
+      color: #000;
+      border-top: 5px solid $dark_color;
+    }
+
+    a {
+      color: rgba(175, 173, 173, 0.753);
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  li {
+    margin-top: 1rem;
+    border-bottom: 1px dotted rgba(167, 166, 166, 0.548);
+    padding-bottom: 0.4rem;
+  }
+
+  .pair {
+    i {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+  #trade_me {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    & li {
+      text-align: center;
+      margin: 0;
+      border: none;
+      font-size: 0.7rem;
+      font-weight: 100;
+      margin-top: 0.7rem;
+      margin-bottom: 0.7rem;
+      i {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  #trading {
+    font-size: 0.7rem;
+    i {
+      font-size: 0.7rem;
+    }
+  }
+  #nav-tabs {
+    background: rgba(243, 241, 241, 0.616);
+    & a {
+      color: rgba(175, 173, 173, 0.753);
+    }
+    & .active {
+      color: #000;
+    }
+    & .dada {
+      border-top: 5px solid rgba(211, 80, 80, 0.781);
+    }
+    & .titu {
+      border-top: 5px solid rgba(74, 202, 74, 0.781);
+    }
+  }
+
+  .buy-me {
+    border: 1px solid rgba(175, 173, 173, 0.753);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 1rem;
+    & input {
+      font-size: 1rem;
+    }
+    & input[type="text"]:focus {
+      outline: #fff;
+    }
+  }
+  .app-stores {
+    margin-top: 1rem;
+    & button {
+      background: #000;
+      color: #fff;
+      text-align: left;
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+}
