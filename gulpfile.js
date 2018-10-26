@@ -53,11 +53,11 @@ gulp.task("serve", ["sass"], () => {
 
 // MOVE THE FONTS TO DESTINATION
 
-// gulp.task("font", () => {
-//   gulp
-//     .src("./node_modules/@fortawesome/fontawesome-free/webfonts/*")
-//     .pipe(gulp.dest("./src/webfonts"));
-// });
+gulp.task("font", () => {
+  gulp
+    .src("./node_modules/@fortawesome/fontawesome-free/webfonts/*")
+    .pipe(gulp.dest("./src/webfonts"));
+});
 // MOVE THE FONT CSS FILE INIO THE FOLDER
 gulp.task("fa", () => {
   gulp
@@ -73,4 +73,4 @@ gulp.task("fj", () => {
 });
 // DEFAult FUNTION
 
-gulp.task("default", ["sass", "js", "serve", "fa", "fj", "trans"]);
+gulp.task("default", ["sass", "js", "serve", "fa","font", "fj", "trans"]);
