@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crypto | Exchange</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+  <!-- NAVBAR  -->
+  <section id="showcase">
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./market.html">Products <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+
+            <li class="nav-item chart">
+              <a class="nav-link" href="#">Charts</a>
+            </li>
+            <div class="clearer">
+              <li class="nav-item signin" id="ram">
+                <a class="nav-link link1" href="./index.html">Sign In</a>
+              </li>
+              <li class="nav-item signup">
+                <a class="nav-link link2" href="./signup.html">Sign Up</a>
+              </li>
+            </div>
+
+            <li class="nav-item smaller1">
+              <a class="nav-link" href="./index.html">Sign In</a>
+            </li>
+            <li class="nav-item smaller2">
+              <a class="nav-link" href="./signup.html">Sign Up</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+    <!-- NAVBAR ENDED -->
+
+    <!-- SHOWCASE AREA -->
+
+    <div class="container">
+      <div class="content mx-auto" style="margin-top:4rem;">
+        <h3 class="text-center mb-5">KYC Verification</h3>
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <div class="card shadow mb-4">
+              <div class="card-body text-secondary">
+
+                <h4 class="text-center border-bottom pb-1">KYC Verification</h4>
+                <div class="mt-4" style="line-height: 1.3rem;">Details you enter here should exactly match the
+                  government documents you're
+                  attaching.</div>
+                <h5 class="text-dark border-bottom mt-3 pb-2">Personal Info</h5>
+                <form class="mt-3">
+
+
+
+
+
+
+
+                  <div class="form-group">
+                    <small>FULL NAME AS ON PAN CARD *</small>
+                    <input type="text" class="form-control" placeholder="Name" id="user" autocomplete="off" required>
+                    <div class="invalid-feedback">
+                      username must be in text
+                    </div>
+                  </div>
+                  <div class="form-group mt-4">
+                    <small>DATE OF BIRTH (DD-MM-YYYY) *</small>
+                    <input type="text" class="form-control" placeholder="Name" id="user" autocomplete="off" required>
+
+                    <!-- <div class="invalid-feedback">
+                    username must be in text
+                  </div> -->
+                  </div>
+                  <div class="form-group mt-4">
+                    <small>ADDRESS*</small>
+                    <textarea class="form-control" rows="3"></textarea>
+                    <!-- <div class="invalid-feedback">
+                    username must be in text
+                  </div> -->
+                  </div>
+                  <div class="form-row mt-4">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <small>CITY *</small>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <small>PIN CODE *</small>
+                        <input type="number" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h6 class="text-dark border-bottom pb-2">PAN Card</h6>
+                  </div>
+                  <div class="form-row mt-3">
+                    <div class="col-md-6">
+                      <div class="form-group">
+
+                        <small>PAN NUMBER *</small>
+                        <input type="number" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <small>RE-ENTER PAN NUMBER*</small>
+                        <input type="number" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group mt-3">
+                    <div class="card mb-3">
+                      <img class="card-img-top" src="./img/pancard.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h6 class="card-title text-danger">Upload PAN Card</h5>
+
+                          <small class="text-muted">on desktop simply drag and drop your file in this feild.</small>
+
+                          <div class="d-flex justify-content-between">
+                            <small class="text-muted">Acceptable format:jpeg or PNG.</small>
+                            <a href="#"><i class="fas fa-file-upload align-self-center" style="font-size:2rem;"></i></a>
+                          </div>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+                  <div class="form-group">
+                    <small>DOCUMENT TYPE*</small>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Aadhaar</option>
+                      <option>Passport</option>
+                      <option>Driving License</option>
+
+                    </select>
+
+                  </div>
+
+                  <h6 class="text-dark border-bottom pb-2 mt-4">Aadhaar Card</h6>
+                  <div class="form-row mt-2">
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <small>AADHAAR NUMBER*</small>
+                        <input type="number" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <small>RE-ENTER AADHAAR NUMBER*
+                        </small>
+                        <input type="number" class="form-control">
+                      </div>
+
+                    </div>
+
+                    <div class="form-group">
+                      <div class="card mb-3">
+                        <img class="card-img-top" src="./img/aadhaar.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h6 class="card-title text-danger">Upload front of Aadhaar Card</h5>
+
+                            <small class="text-muted">on desktop simply drag and drop your file in this feild.</small>
+
+                            <div class="d-flex justify-content-between">
+                              <small class="text-muted">Acceptable format:jpeg or PNG.</small>
+                              <a href="#"><i class="fas fa-file-upload align-self-center" style="font-size:2rem;"></i></a>
+                            </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                  </div>
+
+                  <div class="form-group">
+                    <div class="card">
+                      <div class="card-body">
+                        <h6 class="card-title text-danger">Upload back of Aadhaar Card</h6>
+                        <div class="text-muted"><small> On desktop:simply drag and drop your file in this field</small></div>
+                        <div class="d-flex justify-content-between">
+                          <div class="text-muted"><small>Acceptable formats:jpeg or png.</small></div>
+                          <a href="#"><i class="fas fa-file-upload align-self-center" style="font-size:2rem;"></i></a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                  <h6 class="text-dark">Ready to submit your application?</h6>
+                  <p class="text-muted"><small>Please verify the details you’re submitting. Once submitted, you won’t
+                      be able to change it unless you <a href="#">Contact us</a></small></p>
+                  <button type="submit" class="btn btn-block text-white d-flex justify-content-between" style="background:#2a6f87">
+                    <div class="ml-4">Submit for Verification</div><i class="fas fa-angle-right align-self-center"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ROW ENDED -->
+
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+
+  <!-- SHOW CASE AREA ENDED -->
+
+
+
+
+
+  <script src="./js/jquery.min.js"></script>
+
+  <script src="./js/bootstrap.min.js"></script>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

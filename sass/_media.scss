@@ -1,0 +1,67 @@
+// All MEDIA QUERIES ARE HERE
+
+// MEDIA QUERIES FOR THE LARGE SCREEN
+
+@mixin mediasm {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+// MIXIN FOR THE LARGE SCREEN
+@mixin medialg {
+  @media (min-width: 700px) {
+    @content;
+  }
+}
+
+// MIXIN FOR THE XTRA LARGE
+@mixin mediaxl {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@include medialg {
+  .navbar {
+    padding: 1rem;
+
+    .nav-item {
+      padding-right: 1rem;
+    }
+
+    .smaller1,
+    .smaller2 {
+      display: block;
+    }
+
+    .smaller2 {
+      border: 1px solid #fff;
+      padding: 0;
+      border-radius: 5px;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.514);
+      }
+    }
+
+    .signin,
+    .signup {
+      display: none;
+    }
+
+    .chart {
+      padding: 0 !important;
+      margin: 0 !important;
+      border: none !important;
+    }
+  }
+}
+
+@include mediasm {
+  .content {
+    & #bitcoin {
+      display: none;
+    }
+  }
+}

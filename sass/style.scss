@@ -1,0 +1,78 @@
+$bg_primary: #0667d0;
+// $secondary_color:#48b1bf;
+// $dark_color:#06beb6;
+$secondary_color: #073b5e;
+$dark_color: #4ca1af;
+
+body {
+  font-family: "Montserrat", sans-serif;
+  // font-family: 'Roboto Condensed', sans-serif;
+  color: #fff;
+}
+
+// STYLE FOR THE SCROLLBAR
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(138, 137, 137);
+  border-radius: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(66, 66, 66, 0.575);
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(90, 89, 89, 0.658);
+}
+
+// ENDING OF THE SCROLLBAR
+
+.smaller1,
+.smaller2 {
+  display: none;
+}
+
+// MIXIN FUNCTION FOR THE NAVBAR COLOR
+@mixin navbar_color($firstColor, $secondColor) {
+  background: $secondColor !important;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    $firstColor,
+    $secondColor
+  ) !important;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, $firstColor, $secondColor) !important;
+}
+
+// SHOWCASE AREA
+#showcase {
+  width: 100%;
+  height: 100vh;
+  @include navbar_color($secondary_color, $dark_color);
+  overflow-x: hidden;
+
+  // FORM SETTING
+  // AUTH CLASS
+  .auth {
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+
+    & a {
+      color: rgb(121, 118, 118);
+    }
+  }
+}
+
+@import "./media";
+@import "./partial";
+@import "./market";
