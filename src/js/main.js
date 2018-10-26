@@ -4,7 +4,7 @@ const signin = document.querySelector(".signin"),
 // EVENT FOR THE DOM CONTENT LOADED
 
 document.addEventListener("DOMContentLoaded", e => {
-  if (window.location.pathname === "/index.html") {
+  if (window.location.pathname === "/final-crypto-project/index.html") {
     let item = document.head.appendChild(document.createElement("style"));
     item.innerHTML = `.signin a::after {
       content: '';
@@ -36,7 +36,9 @@ document.addEventListener("DOMContentLoaded", e => {
     }
 
      `;
-  } else if (window.location.pathname === "/signup.html") {
+  } else if (
+    window.location.pathname === "//final-crypto-project/signup.html"
+  ) {
     let item = document.head.appendChild(document.createElement("style"));
     item.innerHTML = `
 
@@ -283,22 +285,6 @@ if (
       e.target.classList.add("titu");
     });
   })();
-  // (function() {
-  //   const ul = document.querySelectorAll(".elemt");
-
-  //   ul.forEach((element, index) => {
-  //     element.addEventListener("click", e => {
-  //       if (
-  //         element.children[0].children[1].textContent ===
-  //         e.target.children[0].children[1].textContent
-  //       ) {
-  //         if(){
-
-  //         }
-  //       }
-  //     });
-  //   });
-  // })();
 }
 
 // ==== AREA FOR THE APEX CHART ====
