@@ -270,8 +270,8 @@ function checkPassword(e) {
 
 // ======= FUNCTION FOR THE BUY ORDER TABLE =====
 if (
-  window.location.pathname !== "/signup.html" &&
-  window.location.pathname !== "/index.html"
+  window.location.pathname !== "/final-crypto-project/signup.html" &&
+  window.location.pathname !== "/final-crypto-project/index.html"
 ) {
   (function() {
     document.getElementById("nav-nanga-tab").addEventListener("click", e => {
