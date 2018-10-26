@@ -162,7 +162,7 @@ signup.addEventListener("click", e => {
 // EVENT FOR THE VALIDATION
 
 (function() {
-  if (window.location.pathname === "/signup.html") {
+  if (window.location.pathname === "/final-crypto-project/signup.html") {
     document.getElementById("user").addEventListener("keyup", checkUser);
     document.getElementById("user").addEventListener("blur", checkUser);
     document.getElementById("email").addEventListener("keyup", checkEmail);
@@ -171,7 +171,7 @@ signup.addEventListener("click", e => {
     document.getElementById("phone").addEventListener("blur", checkPhone);
     document.getElementById("pass").addEventListener("keyup", checkPassword);
     document.getElementById("pass").addEventListener("blur", checkPassword);
-  } else if (window.location.pathname === "/index.html") {
+  } else if (window.location.pathname === "/final-crypto-project/index.html") {
     document.getElementById("email").addEventListener("keyup", checkEmail);
     document.getElementById("email").addEventListener("blur", checkEmail);
 
