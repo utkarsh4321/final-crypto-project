@@ -36,9 +36,7 @@ document.addEventListener("DOMContentLoaded", e => {
     }
 
      `;
-  } else if (
-    window.location.pathname === "//final-crypto-project/signup.html"
-  ) {
+  } else if (window.location.pathname === "/final-crypto-project/signup.html") {
     let item = document.head.appendChild(document.createElement("style"));
     item.innerHTML = `
 
