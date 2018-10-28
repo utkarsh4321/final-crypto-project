@@ -269,10 +269,7 @@ function checkPassword(e) {
 }
 
 // ======= FUNCTION FOR THE BUY ORDER TABLE =====
-if (
-  window.location.pathname !== "/final-crypto-project/signup.html" &&
-  window.location.pathname !== "/final-crypto-project/index.html"
-) {
+if (window.location.pathname === "/final-crypto-project/market.html") {
   (function() {
     document.getElementById("nav-nanga-tab").addEventListener("click", e => {
       e.target.classList.add("dada");
@@ -287,68 +284,74 @@ if (
 
 // ==== AREA FOR THE APEX CHART ====
 // CHART OPTION
-const options = {
-  chart: {
-    height: 250,
-    type: "line"
-  },
-  series: [
-    {
-      name: "Website Blog",
-      type: "column",
-      data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
+if (window.location.pathname === "/final-crypto-project/market.html") {
+  const options = {
+    chart: {
+      height: 250,
+      type: "line"
     },
-    {
-      name: "Social Media",
-      type: "line",
-      data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
-    }
-  ],
-  stroke: {
-    width: [0, 4]
-  },
-  title: {
-    text: "Traffic Sources"
-  },
-  // labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-  labels: [
-    "01 Jan 2001",
-    "02 Jan 2001",
-    "03 Jan 2001",
-    "04 Jan 2001",
-    "05 Jan 2001",
-    "06 Jan 2001",
-    "07 Jan 2001",
-    "08 Jan 2001",
-    "09 Jan 2001",
-    "10 Jan 2001",
-    "11 Jan 2001",
-    "12 Jan 2001"
-  ],
-  xaxis: {
-    type: "datetime"
-  },
-  yaxis: [
-    {
-      title: {
-        text: "Website Blog"
+    series: [
+      {
+        name: "Website Blog",
+        type: "column",
+        data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
+      },
+      {
+        name: "Social Media",
+        type: "line",
+        data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
       }
+    ],
+    stroke: {
+      width: [0, 4]
     },
-    {
-      opposite: true,
-      title: {
-        text: "Social Media"
+    title: {
+      text: "Traffic Sources"
+    },
+    // labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    labels: [
+      "01 Jan 2001",
+      "02 Jan 2001",
+      "03 Jan 2001",
+      "04 Jan 2001",
+      "05 Jan 2001",
+      "06 Jan 2001",
+      "07 Jan 2001",
+      "08 Jan 2001",
+      "09 Jan 2001",
+      "10 Jan 2001",
+      "11 Jan 2001",
+      "12 Jan 2001"
+    ],
+    xaxis: {
+      type: "datetime"
+    },
+    yaxis: [
+      {
+        title: {
+          text: "Website Blog"
+        }
+      },
+      {
+        opposite: true,
+        title: {
+          text: "Social Media"
+        }
       }
-    }
-  ]
-};
-// INIT CHART
-const charts = new ApexCharts(document.getElementById("charts"), options);
-// RENDER CHART
-charts.render();
+    ]
+  };
+  // INIT CHART
+  const charts = new ApexCharts(document.getElementById("charts"), options);
+  // RENDER CHART
+  charts.render();
+}
 
 // ===== FUNCTION FOR THE TOOLTIPS =======
 
 $(function() {
   $('[data-toggle="tooltip"]').tooltip();
+});
+// JQUERY FUNCTION FOR THE MODAL
+$("#myModal").on("shown.bs.modal", function() {
+  $("#myInput").trigger("focus");
 });
