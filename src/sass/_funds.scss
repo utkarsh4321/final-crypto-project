@@ -1,0 +1,119 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+#opens {
+  border: 1px solid rgba(168, 169, 170, 0.651);
+  border-radius: 5px;
+  background: rgba(216, 216, 216, 0.548);
+}
+
+// TOOL TIPS
+#tooltip {
+  position: relative;
+  display: inline-block;
+
+  & .tooltiptext {
+    display: none;
+
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 130%;
+    left: 100%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  & .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  &:hover .tooltiptext {
+    display: inline-block;
+    opacity: 1;
+  }
+}
+#gayab {
+  display: none;
+}
+#mere {
+  display: none;
+}
+.modelss {
+  cursor: pointer;
+}
+.moto {
+  & li {
+    margin-top: 0.7rem;
+  }
+  & li div {
+    font-size: 0.8rem;
+  }
+}

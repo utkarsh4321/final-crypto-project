@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crypto | Exchange</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+  <!-- NAVBAR  -->
+  <section id="showcase">
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./market.html">Market <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./funds.html">Funds</a>
+            </li>
+
+            <li class="nav-item chart">
+              <a class="nav-link" href="./trade_history.html">Trade-history</a>
+            </li>
+            <div class="clearer">
+              <li class="nav-item signin" id="ram">
+                <a class="nav-link link1" href="./index.html">Sign In</a>
+              </li>
+              <li class="nav-item signup">
+                <a class="nav-link link2" href="./signup.html">Sign Up</a>
+              </li>
+            </div>
+
+            <li class="nav-item smaller1">
+              <a class="nav-link" href="./index.html">Sign In</a>
+            </li>
+            <li class="nav-item smaller2">
+              <a class="nav-link" href="./signup.html">Sign Up</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+    <!-- NAVBAR ENDED -->
+
+    <!-- SHOWCASE AREA -->
+
+    <div class="container">
+      <!-- FUNDING SECTION STARTED -->
+      <!-- INTRODUCTORY CARD STARTED -->
+      <div class="card mt-3 shadow">
+
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-2 text-center mt-md-3">
+              <img src="./img/funds.svg" alt="" style="max-width:100%; height: auto;">
+            </div>
+            <div class="col-md-7 mt-md-1" id="funding">
+              <h5 class="text-dark">WazirX P2P: Convert INR ↔ USDT</h5>
+              <p class="text-muted">
+                <small>Use WazirX P2P when you want to buy USDT to trade cryptos, or when you want to sell USDT and
+                  cash
+                  out to INR. It's safe and hassle free!</small>
+              </p>
+            </div>
+            <div class="col-md-3 text-center mt-md-4">
+              <button class="btn btn-success text-white btn-lg" type="submit">INR ↔ USDT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- INTRODUCTORY CARD ENDED -->
+      <!-- FUNDING TABLE CONTENT STARTED  -->
+      <h2 class="text-white border-bottom mt-4">Funds</h2>
+      <div class="card">
+        <div class="card-body p-1">
+          <div class="text-dark d-flex justify-content-between flex-wrap">
+            <div class="fukrey">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+
+                </div>
+                <input type="text" class="form-control m-0" aria-label="Dollar amount (with dot and two decimal places)"
+                  placeholder="search">
+
+              </div>
+            </div>
+            <!-- MATERIAL SWITCH -->
+            <div class="d-flex align-self-center mt-2">
+              <label class="switch align-self-center mt-1 mr-1">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+              <div style="font-size:1rem;"><small>Hide Zero Balances</small></div>
+            </div>
+            <div style="font-size:1rem;" class="mt-md-2 mt-2"><small>Estimated Portfolio ~ <i class="fas fa-rupee-sign align-self-center"></i>-31.70</small></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TABLE CONTENT STARTED -->
+      <div class="card mt-3 mb-3">
+        <div class=" card-body text-secondary p-1">
+          <div class="table-responsive-md">
+            <table class="table" id="tabble">
+
+              <thead>
+                <tr>
+
+
+
+                  <th scope="col"><small>ASSETS</small></th>
+                  <th scope="col"><small>
+                      <div class="d-flex">
+                        <div>AVAILABLE</div>
+                        <div class="ml-1"> BALANCE</div>
+
+                      </div>
+                    </small></th>
+                  <th scope="col"><small>
+                      <div class="d-flex">
+                        <div class="mr-1">IN</div>
+                        <div>ORDERS</div>
+                      </div>
+                    </small></th>
+                  <th scope="col"><small>TOTAL</small></th>
+                  <th scope="col">
+                    <div class="text-primary"><small>
+                        <div class="d-flex mt-0">
+                          <div>INR</div>
+                          <div class="ml-1">VALUE</div>
+                          <i class="fas fa-arrow-down align-self-center"></i>
+                        </div>
+
+                      </small></div>
+                  </th>
+                  <th scope="col"><small>ACTION</small></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="text-dark">
+                    <div class="d-flex"> <i class="fab fa-bitcoin text-primary align-self-center bitone mr-1"></i>
+                      <div class="d-flex">
+                        <div><small> Bitcoin </small> </div>
+                        <div><small>(BTC)</small> </div>
+                      </div>
+                    </div>
+                  </th>
+                  <td><small>0.0</small></td>
+                  <td><small>0.0</small></td>
+                  <th>0</th>
+
+                  <td>
+
+                    <small>
+                      <div class="d-flex">
+                        <i class="fas fa-rupee-sign align-self-center mr-1"></i>
+                        <div>0.00</div>
+                      </div>
+                    </small></td>
+                  <td>
+                    <div class="d-flex">
+                      <div class="btn btn-outline-success btn-sm mr-2" id="deposite">Deposit</div>
+                      <div class="btn btn-outline-danger btn-sm" id="withdraw">Withdraw</div>
+
+
+                    </div>
+                  </td>
+
+
+
+                <tr>
+
+                  <td style="border:none; padding:0;" colspan="7">
+                    <div id="mere">
+                      <div class="container pb-3">
+                        <div class="row">
+                          <!-- <div class="col-12"> -->
+
+                          <div class="col-md-12" style="width:50%;">
+                            <p class="border-bottom"><small class="font-weight-bold">Transfer Zebi from your WazirX
+                                Wallet to another</small></p>
+                            <form>
+
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <div class="d-flex justify-content-between">
+                                    <small>VOLUME</small>
+                                    <small>AVAILABLE ZIL: 0.0
+                                    </small>
+                                  </div>
+                                  <input type="number" placeholder="0" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                  <small>DESTINATION ADDRESS</small>
+                                  <input type="number" class="form-control">
+
+                                </div>
+                                <div class="col-md-4">
+                                  <small>REMARKS</small>
+                                  <input type="number" class="form-control">
+
+                                </div>
+                                <div class="col-md-4 mt-4">
+                                  <button class="btn btn-danger text-white"><small>PROCEED WITH WITHDRAW
+
+                                </div>
+                              </div>
+                              <p class="mt-2"><small>WITHDRAW FEE: ZIL 65</small></p>
+
+
+
+
+
+
+                            </form>
+                            <!-- </div> -->
+
+                          </div>
+
+
+
+                        </div>
+
+                        <!-- row ended -->
+                        <p class="text-danger border-bottom mb-0"><small class="font-weight-bold"><i class="fas fa-exclamation-circle"></i>Disclaimer</small></p>
+                        <div class="text-muted text-left" style="font-size:.7rem;"><small>• Please cross-check the
+                            destination address. Withdrawals to Smart Contract Addresses, payments or participation in
+                            ICOs/Airdrops are not supported and will be lost forever. Withdrawal requests cannot be
+                            cancelled after submission.</small></div>
+                      </div>
+
+
+
+                    </div>
+          </div>
+          <div id="gayab" class="p-3">
+
+            <div class="row">
+              <div class="col-md-8 text-secondary">
+                <h6 class="text-secondary border-bottom pb-2 font-weight-bold">Send to Your Secure Zebi
+                  Deposit
+                  Address</h6>
+                <div class="mt-3 mb-3"><small>Destination Address</small></div>
+
+                <div class="d-flex col-md-6" style="width:50%;">
+                  <input type="text" value="Hello World" id="myInput" class="form-control" readonly>
+
+                  <div id="tooltip">
+                    <button id="copied" class="btn btn-success">
+                      <span class="tooltiptext" id="myTooltip">Copy</span>
+                      <i class="far fa-clone mr-2"></i>Copy
+                    </button>
+                  </div>
+                </div>
+
+
+
+
+
+
+                <p class="text-danger mt-4 border-bottom mb-0"><small class="font-weight-bold"><i class="fas fa-exclamation-circle"></i>Disclaimer</small></p>
+                <div class="text-muted text-left" style="font-size:.7rem;"><small>• Minimum deposit of 130
+                    ZIL,
+                    deposit below that
+                    cannot be
+                    recovered.
+                    • Please
+                    deposit only ZIL on this address. If you deposit any other coin, it will be lost forever.</small></div>
+              </div>
+              <div class="col mt-1 ">
+                <div class="border-bottom"><small class="font-weight-bold">Or scan this QR Code</small></div>
+                <div class="mt-3 d-flex justify-content-md-center">
+                  <img src="./img/qrcode.png" alt="" style="width:116px;height:116px;" class="shadow">
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+
+
+          </td>
+
+          </tr>
+
+
+
+
+          </tr>
+          <tr>
+            <th class="text-dark">
+              <div class="d-flex"> <i class="fab fa-bitcoin text-primary align-self-center bitone mr-1"></i>
+                <div class="d-flex">
+                  <div><small> Bitcoin </small> </div>
+                  <div><small>(BTC)</small> </div>
+                </div>
+              </div>
+            </th>
+            <td><small>0.0</small></td>
+            <td><small>0.0</small></td>
+            <th>0</th>
+
+            <td>
+
+              <small>
+                <div class="d-flex">
+                  <i class="fas fa-rupee-sign align-self-center mr-1"></i>
+                  <div>0.00</div>
+                </div>
+              </small></td>
+            <td>
+              <div class="d-flex">
+                <div class="btn btn-outline-success btn-sm mr-2" id="deposite">Deposit</div>
+                <div class="btn btn-outline-danger btn-sm" id="withdraw">Withdraw</div>
+
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="text-dark">
+              <div class="d-flex"> <i class="fab fa-bitcoin text-primary align-self-center bitone mr-1"></i>
+                <div class="d-flex">
+                  <div><small> Bitcoin </small> </div>
+                  <div><small>(BTC)</small> </div>
+                </div>
+              </div>
+            </th>
+            <td><small>0.0</small></td>
+            <td><small>0.0</small></td>
+            <th>0</th>
+
+            <td>
+
+              <small>
+                <div class="d-flex">
+                  <i class="fas fa-rupee-sign align-self-center mr-1"></i>
+                  <div>0.00</div>
+                </div>
+              </small></td>
+            <td>
+              <div class="d-flex">
+                <div class="btn btn-outline-success btn-sm mr-2" id="deposite">Deposit</div>
+                <div class="btn btn-outline-danger btn-sm" id="withdraw">Withdraw</div>
+
+
+              </div>
+            </td>
+          </tr>
+          </tbody>
+          </table>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+    <!-- TABLE CONTENT ENDED -->
+    <!-- FUNDING TABLE CONTENT STARTED -->
+    <!-- FUNDING SECTION ENDED -->
+    </div>
+
+
+  </section>
+
+
+
+
+  <!-- SHOW CASE AREA ENDED -->
+
+
+
+
+
+  <script src="./js/jquery.min.js"></script>
+
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/fund.js"></script>
+</body>
+
+</html>

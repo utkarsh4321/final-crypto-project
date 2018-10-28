@@ -18,7 +18,8 @@ gulp.task("js", () => {
   gulp
     .src([
       "./node_modules/bootstrap/dist/js/bootstrap.min.js",
-      "node_modules/jquery/dist/jquery.min.js"
+      "node_modules/jquery/dist/jquery.min.js",
+      "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
     ])
     .pipe(gulp.dest("./src/js"));
 });
@@ -73,4 +74,4 @@ gulp.task("fj", () => {
 });
 // DEFAult FUNTION
 
-gulp.task("default", ["sass", "js", "serve", "fa","font", "fj", "trans"]);
+gulp.task("default", ["sass", "js", "serve", "fa", "font", "fj", "trans"]);
