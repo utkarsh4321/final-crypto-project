@@ -4,7 +4,7 @@ const signin = document.querySelector(".signin"),
 // EVENT FOR THE DOM CONTENT LOADED
 
 document.addEventListener("DOMContentLoaded", e => {
-  if (window.location.pathname === "/index.html") {
+  if (window.location.pathname === "/final-crypto-project/index.html") {
     let item = document.head.appendChild(document.createElement("style"));
     item.innerHTML = `.signin a::after {
       content: '';
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", e => {
     }
 
      `;
-  } else if (window.location.pathname === "/signup.html") {
+  } else if (window.location.pathname === "/final-crypto-project/signup.html") {
     let item = document.head.appendChild(document.createElement("style"));
     item.innerHTML = `
 
@@ -162,7 +162,7 @@ signup.addEventListener("click", e => {
 // EVENT FOR THE VALIDATION
 
 (function() {
-  if (window.location.pathname === "/signup.html") {
+  if (window.location.pathname === "/final-crypto-project/signup.html") {
     document.getElementById("user").addEventListener("keyup", checkUser);
     document.getElementById("user").addEventListener("blur", checkUser);
     document.getElementById("email").addEventListener("keyup", checkEmail);
@@ -171,7 +171,7 @@ signup.addEventListener("click", e => {
     document.getElementById("phone").addEventListener("blur", checkPhone);
     document.getElementById("pass").addEventListener("keyup", checkPassword);
     document.getElementById("pass").addEventListener("blur", checkPassword);
-  } else if (window.location.pathname === "/index.html") {
+  } else if (window.location.pathname === "/final-crypto-project/index.html") {
     document.getElementById("email").addEventListener("keyup", checkEmail);
     document.getElementById("email").addEventListener("blur", checkEmail);
 
@@ -269,7 +269,7 @@ function checkPassword(e) {
 }
 
 // ======= FUNCTION FOR THE BUY ORDER TABLE =====
-if (window.location.pathname === "/market.html") {
+if (window.location.pathname === "/final-crypto-project/market.html") {
   (function() {
     document.getElementById("nav-nanga-tab").addEventListener("click", e => {
       e.target.classList.add("dada");
@@ -284,7 +284,7 @@ if (window.location.pathname === "/market.html") {
 
 // ==== AREA FOR THE APEX CHART ====
 // CHART OPTION
-if (window.location.pathname === "/market.html") {
+if (window.location.pathname === "/final-crypto-project/market.html") {
   const options = {
     chart: {
       height: 250,
@@ -345,15 +345,6 @@ if (window.location.pathname === "/market.html") {
   // RENDER CHART
   charts.render();
 }
-// ==== FUNCTION FOR THE TRADING MODAL ====
-
-// modelss.forEach(element => {
-//   element.addEventListener("click", e => {
-//     console.log("ut is here");
-
-//     e.preventDefault();
-//   });
-// });
 
 // ===== FUNCTION FOR THE TOOLTIPS =======
 
